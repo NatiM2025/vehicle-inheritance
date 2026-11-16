@@ -2,6 +2,25 @@ package com.pluralsight;
 
 public class Vehicle {
     private String color;
+    private String model;
+    private int topSpeed;
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public int getTopSpeed() {
+        return topSpeed;
+    }
+
+    public void setTopSpeed(int topSpeed) {
+        this.topSpeed = topSpeed;
+    }
+
     private int numberOfPassengers;
     private int cargoCapacity;
     private int fuelCapacity;
@@ -37,4 +56,20 @@ public class Vehicle {
     public void setFuelCapacity(int fuelCapacity) {
         this.fuelCapacity = fuelCapacity;
     }
+
+    public void startEngine(){
+        System.out.println("Engin on");
+    }
+    public void stopEngine(){
+        System.out.println("Engin off");
+    }
+
+    public void accelerate(){
+        System.out.println("Accelerated");
+    }
+
+    public void brake(){
+        System.out.println("brake");
+    }
+
 }
