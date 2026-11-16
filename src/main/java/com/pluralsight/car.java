@@ -1,4 +1,4 @@
 package com.pluralsight;
 
-public class car {
+public class car extends Vehicle {
 }
